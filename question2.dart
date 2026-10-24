@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('Enter the first num:');
+  stdout.write("Enter the first num:");
   double num1 = double.parse(stdin.readLineSync()!);
 
-  stdout.write('Enter the second num:');
+  stdout.write("Enter the second num:");
   double num2 = double.parse(stdin.readLineSync()!);
 
-  print('operation: +, -, *, /');
+  print("operation: +, -, *, /");
   String op = stdin.readLineSync()!;
 
   switch (op) {
@@ -22,7 +22,7 @@ void main() {
       break;
     case '/':
       if (num2 == 0) {
-        print('Error: Cannot divide by zero');
+        print("Error: Cannot divide by zero");
       } else {
         print("The Division is ${num1 / num2}");
       }
